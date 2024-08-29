@@ -1,0 +1,36 @@
+.Navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5rem;
+    width: 100vw;
+    background-color: rgb(44, 46, 46);
+}
+
+input{
+    width: 48rem;
+    height: 2.4rem;
+    border-radius: .4rem;
+    text-align: center;
+    font-size: 1rem;
+}
+i{
+    font-size: 1.4rem;
+    text-align: center;
+}
+span{
+    padding-left: .4rem;
+}
+
+button{
+    height: 2.4rem;
+    width: 6rem;
+    margin-right: 1.4rem;
+    background-color: rgba(0, 190, 0, 0.884);
+    border-radius: .4rem;
+}
+h{
+    color: white;
+    font-size: 1.6rem;
+    margin-left:1.4rem;
+}
