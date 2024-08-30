@@ -1,8 +1,10 @@
 import '../Style/Navbar.css';
 function Navbar() {
+
   return (
     <>
       <div className="Navbar">
+     
         <div>
           <h>ORDER_NOW</h>
         </div>
