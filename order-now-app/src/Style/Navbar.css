@@ -2,18 +2,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 5rem;
+    height: 15vh;
     width: 100vw;
     background-color: rgb(44, 46, 46);
 }
 
-input{
+.searchbar{
     width: 48rem;
     height: 2.4rem;
     border-radius: .4rem;
     text-align: center;
     font-size: 1rem;
-}
+} 
 i{
     font-size: 1.4rem;
     text-align: center;
