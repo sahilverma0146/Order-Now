@@ -5,6 +5,7 @@
     height: 15vh;
     width: 100vw;
     background-color: rgb(44, 46, 46);
+    /* position: fixed; */
 }
 
 .searchbar{

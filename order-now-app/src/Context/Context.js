@@ -3,6 +3,7 @@ import { faker } from "@faker-js/faker";
 import CartReducer from "./Reducer";
 
 export const Cart = createContext();
+faker.seed(20)
 
 const Context = ({ children }) => {
  
@@ -11,18 +12,22 @@ const Context = ({ children }) => {
     id: faker.date.between({ from: "2000-01-01", to: Date.now() }),
     name: faker.commerce.productName(),
     price: faker.commerce.price(),
+    image:faker.image.urlLoremFlickr(),
+    inStock:faker.helpers.arrayElement([0,3,5,6,7]),
+    fastDelivery:faker.datatype.boolean(),
+    ratings:faker.helpers.arrayElement([1,2,3,4,5])
   }));
-  console.log(initial);
+  // console.log(initial);
 
-  const [state, Dispatch] = useReducer(CartReducer,{
+  const [state, dispatch] = useReducer(CartReducer,{
     initial:initial, 
-    Cart:[]
+    cart:[]
   });
 
 
   return (
     <>
-      <Cart.Provider value={{state , Dispatch}}>{children}</Cart.Provider>
+      <Cart.Provider value={{state , dispatch}}>{children}</Cart.Provider>
     </>
   );
 };
