@@ -83,9 +83,36 @@ img {
 
 .dropdown {
   position: absolute;
-  top: 4rem;
-  right: 5rem;
-  height: 5rem;
-  width:8rem;
-  background-color: red;
+  top:15%; 
+  right: 1rem;             
+  background-Color: #fff;
+  box-Shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  /* list-Style-Type: none; */
+  padding: 10px;
+  margin: 0;
+  width: max-content;
+  
+}
+
+.dropdownlist{
+  display: flex;
+  /* text-align: center; */
+}
+
+.dropdownlist div{
+  text-align: center;
+}
+.dropdownlist img{
+  height: 2rem;
+  width: 2rem;
+  margin-right: 1rem;
+}
+
+.dropdownlist div button {
+  margin-left: 1rem;
+}
+.crtdltbtn{
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
 }

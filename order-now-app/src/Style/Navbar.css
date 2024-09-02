@@ -1,11 +1,11 @@
 .Navbar{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 15vh;
     width: 100vw;
     background-color: rgb(44, 46, 46);
-    /* position: fixed; */
+    position: relative;
 }
 
 .searchbar{
@@ -23,7 +23,7 @@ span{
     padding-left: .4rem;
 }
 
-button{
+.cartbtn{
     height: 2.4rem;
     width: 6rem;
     margin-right: 1.4rem;

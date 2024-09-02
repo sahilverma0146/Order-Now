@@ -27,14 +27,15 @@ function Navbar() {
           placeholder="Search For Products..."
           type="text"
         ></input>
-        <button onClick={dropDownCart}>
+        <button className="cartbtn" onClick={dropDownCart}>
           <i class="fa-sharp fa-solid fa-cart-plus"></i> <span>{cart.length}</span>{" "}
           <i class="fa-solid fa-caret-down"></i>
         </button>
 
-        {/* {isDropdownVisible ? (<DropDown></DropDown>): (<span></span>)} */}
+
       </div>
-      
+      {isDropdownVisible ? (<DropDown></DropDown>): (<div/>)}
+
     </>
   );
 }
