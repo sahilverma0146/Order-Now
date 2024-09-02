@@ -3,6 +3,7 @@ import {  CartState } from "../Context/Context";
 import "../Style/Navbar.css";
 import '../Style/Home.css'
 import DropDown from "./DropDown";
+import { Link } from "react-router-dom";
 function Navbar() {
 
   const [isDropdownVisible , setIsDropdownVisible] = useState(false)
@@ -20,7 +21,7 @@ function Navbar() {
 
       <div className="Navbar">
         <div>
-          <h>ORDER_NOW</h>
+          <Link to='/home'>ORDER_NOW</Link>
         </div>
         <input
           className="searchbar"

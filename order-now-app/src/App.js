@@ -1,7 +1,7 @@
 import "./App.css";
 import Context from "./Context/Context";
 import Navbar from "./components/Navbar";
-import Cart from "./components/Cart";
+import NewCart from "./components/NewCart";
 import Home from "./components/Home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import DropDown from "./components/DropDown";
@@ -12,13 +12,14 @@ function App() {
       <BrowserRouter>
         <Context>
           <Navbar></Navbar>
-          <Home></Home>
+          
           <Routes>
-            {/* <Route path="/Cart" exact><Cart></Cart></Route> */}
-            <Route path="/Cart" element={ <Cart />}>
+            <Route path="/newCart"  element={<NewCart></NewCart>}></Route>
+            <Route path="/Home" element={<Home></Home>}></Route>
              
-            </Route>
+            {/* </Route> */}
           </Routes>
+          {/* <Home></Home> */}
         </Context>
       </BrowserRouter>
     </>
